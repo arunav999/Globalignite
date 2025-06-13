@@ -31,7 +31,7 @@ body {
 
 /* ----- CONTAINER ----- */
 .container {
-  width: 65rem;
+  width: 40rem;
   padding: 1.6rem;
   background-color: #fff;
   border-radius: 1.5rem;
@@ -47,9 +47,10 @@ body {
 .icon {
   height: 2.5rem;
   width: 2.5rem;
+  cursor: pointer;
 }
 
-.cart-num{
+.cart-num {
   position: absolute;
   background-color: #efcdc9;
   padding: 0.25rem 0.45rem;
@@ -57,4 +58,88 @@ body {
   top: -0.5rem;
   right: -0.2rem;
   color: #973030;
+}
+
+/* ----- CART-ITEMS ----- */
+.cart-items {
+  margin-top: 2.25rem;
+}
+
+/* ----- CART-CARD ----- */
+.cart-container {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding: 2.25rem 4.25rem;
+  /* border: 1px solid black; */
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: top;
+  gap: 2.25rem;
+}
+
+.cart-container .img {
+  height: 10.2rem;
+  width: 10.2rem;
+  overflow: hidden;
+}
+
+.cart-container .img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.dish {
+  display: flex;
+  flex-direction: column;
+  gap: 2.45rem;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.name-price {
+  font-size: 1.25rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ----- CART-CARD-BUTTONS ----- */
+.cart-buttons {
+  font-size: 1.55rem;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+}
+
+.cart-buttons span {
+  display: flex;
+  justify-self: flex-start;
+  align-self: flex-start;
+}
+
+.cart-buttons .plus {
+  color: #f41f1f;
+
+  display: flex;
+  justify-self: center;
+  align-self: center;
+}
+
+.cart-buttons button {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #f41f1f;
+  color: #fff;
 }

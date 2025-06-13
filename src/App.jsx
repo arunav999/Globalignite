@@ -1,3 +1,6 @@
+import Cart from "./components/Cart";
+import CART_DATA from "./utils/data";
+
 const App = () => {
   return (
     <>
@@ -21,7 +24,7 @@ const App = () => {
             </svg>
           </div>
           <div className="head-name">
-            <h2>Items Cart</h2>
+            <h2>Item Carts</h2>
           </div>
           <div className="icon cart-helper">
             <span className="cart-icon">
@@ -44,8 +47,19 @@ const App = () => {
           </div>
         </div>
 
-        {/*  */}
-        <div className="cart-items"></div>
+        {/* CART ITEMS */}
+        <div className="cart-items">
+          <h2>Your Food Cart</h2>
+          {CART_DATA.map((item) => (
+            <Cart
+              key={item.id}
+              dishName={item.dishName}
+              imageData={item.imageData}
+              imageAlt={item.imageAlt}
+              price={item.price}
+            />
+          ))}
+        </div>
 
         {/*  */}
         <div className="promo"></div>
