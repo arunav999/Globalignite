@@ -28,6 +28,11 @@ body {
   position: relative;
 }
 
+.promo-color,
+.del-icon:hover {
+  color: #f41f1f;
+}
+
 
 /* ----- CONTAINER ----- */
 .container {
@@ -119,10 +124,11 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  cursor: pointer;
 }
 
 .cart-buttons span {
+  cursor: pointer;
+
   display: flex;
   justify-self: flex-start;
   align-self: flex-start;
@@ -130,6 +136,7 @@ body {
 
 .cart-buttons .plus {
   color: #f41f1f;
+  cursor: pointer;
 
   display: flex;
   justify-self: center;
@@ -142,4 +149,32 @@ body {
   border-radius: 0.25rem;
   background-color: #f41f1f;
   color: #fff;
+  cursor: pointer;
+}
+
+.cart-buttons button:hover {
+  background-color: #921313;
+}
+
+/* ----- PROMO-CODE ----- */
+.promo {
+  padding: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo-input input {
+  font-size: 1.55rem;
+  width: 31rem;
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: #dadada;
 }
