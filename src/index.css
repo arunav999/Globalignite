@@ -210,3 +210,15 @@ body {
 }
 
 /* ----- TOTAL-PRICE ----- */
+.payment {
+  margin-top: 1.25rem;
+}
+
+.method {
+  margin-top: 1.25rem;
+  padding: 1.85rem 2.45rem;
+  font-size: 1.25rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.05);
+}

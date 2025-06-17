@@ -92,7 +92,15 @@ const App = () => {
         </div>
 
         {/* PAYMENT */}
-        <div className="payment"></div>
+        <div className="payment">
+          <div className="heading">
+            <h2>Payment Method</h2>
+          </div>
+
+          <div className="method">
+            <span>Credit/Debit Card</span>
+          </div>
+        </div>
       </div>
     </>
   );
