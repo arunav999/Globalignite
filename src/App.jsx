@@ -3,6 +3,8 @@ import CartItems from "./components/CartItems";
 import CART_DATA, { totalPrice } from "./utils/data";
 
 const App = () => {
+  
+  
   return (
     <>
       <div className="container">
