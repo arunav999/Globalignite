@@ -1,5 +1,6 @@
 import Cart from "./components/Cart";
-import CART_DATA from "./utils/data";
+import CartItems from "./components/CartItems";
+import CART_DATA, { totalPrice } from "./utils/data";
 
 const App = () => {
   return (
@@ -72,19 +73,25 @@ const App = () => {
           </div>
         </div>
 
-        {/*  */}
+        {/* TOTAL-PRICE */}
         <div className="total">
-          <div className="item">
-            <span>Grilld Salomon</span>
-            <span>$192</span>
+          <div>
+            {CART_DATA.map((item) => (
+              <CartItems
+                key={item.id}
+                item={item.dishName}
+                price={item.price}
+              />
+            ))}
           </div>
-          <div className="item">
-            <span>Meat Vegetable</span>
-            <span>$102</span>
+
+          <div className="total-price">
+            <span>Total</span>
+            <span>${totalPrice.toFixed(2)}</span>
           </div>
         </div>
 
-        {/*  */}
+        {/* PAYMENT */}
         <div className="payment"></div>
       </div>
     </>
